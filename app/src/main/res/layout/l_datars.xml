@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".LihatData"
+    android:id="@+id/l_datars">
+
+    <TextView
+        android:id="@+id/idRS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="ID Rumah Sakit" />
+    <TextView
+        android:id="@+id/fieldidrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namaRS"
+        android:layout_marginLeft="50dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/namars"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Nama Rumah Sakit" />
+    <TextView
+        android:id="@+id/fieldnamars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/namars"
+        android:layout_marginLeft="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/webRS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fieldwebrs"
+        android:layout_alignBottom="@+id/fieldwebrs"
+        android:text="Website Rumah Sakit" />
+    <TextView
+        android:id="@+id/fieldwebrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:layout_toRightOf="@+id/webRS"
+        android:layout_below="@+id/fieldnamars"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/notelpRS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fieldnotelprs"
+        android:layout_alignBottom="@+id/fieldnotelprs"
+        android:text="No Telpon Rumah Sakit" />
+    <TextView
+        android:id="@+id/fieldnotelprs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/notelpRS"
+        android:layout_below="@+id/fieldwebrs"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/alamatRS"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fieldalamatrs"
+        android:layout_alignBottom="@+id/fieldalamatrs"
+        android:text="Alamat Rumah Sakit" />
+
+    <TextView
+        android:id="@+id/fieldalamatrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/alamatRS"
+        android:layout_below="@+id/alamatRS"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alamatRS"
+        android:layout_below="@+id/alamatRS"
+        android:layout_marginTop="34dp"
+        android:text="Kembali"
+        style="?android:attr/borderlessButtonStyle" />
+
+</RelativeLayout>

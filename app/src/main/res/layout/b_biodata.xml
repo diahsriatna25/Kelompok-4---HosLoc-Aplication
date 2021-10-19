@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".BuatBiodata"
+    android:id="@+id/b_biodata">
+
+    <TextView
+        android:id="@+id/idRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="ID Rumah Sakit"/>
+
+    <EditText
+        android:id="@+id/fieldidrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/idRS"
+        android:layout_below="@+id/idRS"
+        android:inputType="number"
+        android:maxLength="10">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/namars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fieldidrs"
+        android:layout_below="@+id/fieldidrs"
+        android:layout_marginTop="10dp"
+        android:text="Nama RS" />
+
+    <EditText
+        android:id="@+id/fieldnamars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/namars"
+        android:layout_below="@+id/namars"
+        android:inputType="text"
+        android:maxLength="100"/>
+
+    <TextView
+        android:id="@+id/webRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fieldnamars"
+        android:layout_below="@+id/fieldnamars"
+        android:layout_marginTop="10dp"
+        android:text="Web RS" />
+
+    <EditText
+        android:id="@+id/fieldwebrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/webRS"
+        android:layout_below="@+id/webRS"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/notelpRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fieldwebrs"
+        android:layout_below="@+id/fieldwebrs"
+        android:layout_marginTop="10dp"
+        android:text="No Telepon RS" />
+
+    <EditText
+        android:id="@+id/fieldnotelprs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/notelpRS"
+        android:layout_below="@+id/notelpRS"
+        android:inputType="number"
+        android:maxLength="50"
+        android:hint=""/>
+
+
+    <TextView
+        android:id="@+id/alamatRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fieldnotelprs"
+        android:layout_below="@+id/fieldnotelprs"
+        android:layout_marginTop="10dp"
+        android:text="Alamat RS" />
+
+    <EditText
+        android:id="@+id/fieldalamatrs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alamatRS"
+        android:layout_below="@+id/alamatRS"
+        android:maxLength="100"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fieldalamatrs"
+        android:layout_alignParentBottom="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/fieldalamatrs"
+        android:layout_alignEnd="@+id/fieldalamatrs" />
+
+</RelativeLayout>
